@@ -1,5 +1,10 @@
-LabClass co452Lab = new LabClass(3);
-Student veena = new Student("Veena Patel", "20388712");
-Student gita = new Student("Gita Ralhan", "20844312");
-Student tim = new Student("Tim Lee", "20199812");
-co452Lab.enrollStudent(gita);
+LabClass labClass1 = new LabClass(3);
+Student student1 = new Student("Peter", "12345");
+labClass1.enrollStudent(student1);
+labClass1.printList();
+Lab class unknown
+Instructor: unknown   Room: unknown
+Class list:
+Peter, student ID: 12345, credits: 0
+Number of students: 1
+student1.addCredits(20);
