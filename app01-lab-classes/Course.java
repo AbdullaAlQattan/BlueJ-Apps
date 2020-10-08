@@ -2,7 +2,7 @@
 /**
  * Write a description of class Course here.
  *
- * @author Derek Peacock
+ * @author Abdulla AlQattan
  * @version 0.1
  */
 public class Course
