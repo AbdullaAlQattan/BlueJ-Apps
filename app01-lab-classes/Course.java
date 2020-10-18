@@ -12,11 +12,22 @@ public class Course
     private String code;
 
     /**
-     * Constructor for objects of class Course
+     * This method will be called to create a new course object
+     * It will initialize the course title and the course code
      */
-    public Course()
+    public Course(String title, String code)
     {
-        
+        this.title = title;
+        this.code = code;
     }
 
+    /**
+     * This method will print out the title and the code
+     */
+    public void print()
+    {
+        //System.out.println(title, code);
+        System.out.println("course title " + title + ", code: " + code);
+
+    }
 }
