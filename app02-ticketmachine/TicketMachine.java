@@ -23,6 +23,8 @@ public class TicketMachine
     private Ticket aylesburyTicket;
     private Ticket amershamTicket;
     private Ticket highWycombeTicket;
+    private Ticket customerTicket;
+    
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -32,8 +34,10 @@ public class TicketMachine
         balance = 0;
         total = 0;
         
-        
-        amershamTicket = new Ticket ("amersham", 300);
+        aylesburyTicket = new Ticket ("Aylesbury", 220);
+        amershamTicket = new Ticket ("Amersham", 300);
+        highWycombeTicket = new Ticket ("High Wycombe", 330);
+        customerTicket = null;
     }
 
     /**
