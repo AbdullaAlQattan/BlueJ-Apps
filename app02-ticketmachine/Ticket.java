@@ -15,11 +15,17 @@ public class Ticket
     /**
      * Constructor for objects of class Ticket
      */
-    public Ticket()
+    public Ticket(String destination, int cost)
     {
-        // initialise instance variables
-        
+        this.destination = destination;
+        this.cost = cost;
+        date = new Date();
     }
 
+    public void print()
+    { 
+        System.out.println("Ticket " + destination + " " 
+        + cost + " pence " + date);
+    }
     
 }
