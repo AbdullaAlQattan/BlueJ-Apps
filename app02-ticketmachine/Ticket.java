@@ -21,7 +21,12 @@ public class Ticket
         this.cost = cost;
         date = new Date();
     }
-
+    
+    public int getPrice ()
+    {
+        return cost;
+    }
+  
     public void print()
     { 
         System.out.println("Ticket " + destination + " " 

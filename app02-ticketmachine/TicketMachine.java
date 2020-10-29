@@ -37,6 +37,7 @@ public class TicketMachine
         aylesburyTicket = new Ticket ("Aylesbury", 220);
         amershamTicket = new Ticket ("Amersham", 300);
         highWycombeTicket = new Ticket ("High Wycombe", 330);
+        
         customerTicket = null;
     }
 
@@ -74,6 +75,50 @@ public class TicketMachine
         }
     }
 
+    public void selectAylesbury()
+    {
+        customerTicket = aylesburyTicket;
+    }
+    
+    public void selectAmersham()
+    {
+        customerTicket = amershamTicket;
+    }
+    
+    public void selectHighWycombe()
+    {
+        customerTicket = highWycombeTicket;
+    } 
+    
+    public void insert10p()
+    {
+        balance = balance + 10;
+        printBalance();
+    }
+    
+    public void insert20p()
+    {
+        balance = balance + 20;
+        printBalance();
+    }
+    
+    public void insert100p()
+    {
+        balance = balance + 100;
+        printBalance();
+    }
+    
+    public void insert200p()
+    {
+        balance = balance + 200; 
+        printBalance();
+    }
+    
+    public void printBalance()
+    {
+        System.out.println ("current balance = " + balance );
+    }
+    
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
@@ -81,13 +126,14 @@ public class TicketMachine
      */
     public void printTicket()
     {
+        price = customerTicket.getPrice ();
         if(balance >= price) 
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
             System.out.println("# Ticket");
-            System.out.println("# " + price + " cents.");
+            customerTicket.print();
             System.out.println("##################");
             System.out.println();
 
