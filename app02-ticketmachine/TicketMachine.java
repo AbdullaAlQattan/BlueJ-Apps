@@ -138,7 +138,7 @@ public class TicketMachine
             System.out.println();
 
             // Update the total collected with the price.
-            total = total + price;
+            total = total + price; 
             // Reduce the balance by the price.
             balance = balance - price;
         }
