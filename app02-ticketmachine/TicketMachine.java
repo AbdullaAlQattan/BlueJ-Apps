@@ -5,7 +5,7 @@
  * Instances will check to ensure that a user only enters
  * sensible amounts of money, and will only print a ticket
  * if enough money has been input.
- * 
+ * TicketMachine allows you to buy the tickets then prints then out and also refunds can be issued 
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
