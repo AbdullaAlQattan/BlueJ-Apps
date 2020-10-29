@@ -1,0 +1,39 @@
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insert100p();
+current balance = 100
+ticketMa1.insert10p();
+current balance = 110
+ticketMa1.insert200p();
+current balance = 310
+ticketMa1.insert20p();
+current balance = 330
+ticketMa1.selectHighWycombe();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+Ticket High Wycombe 330 pence Thu Oct 29 14:17:34 AST 2020
+##################
+
+ticketMa1.selectAylesbury();
+ticketMa1.printTicket();
+You must insert at least: 220 more cents.
+ticketMa1.insertMoney(600);
+ticketMa1.selectAylesbury();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+Ticket Aylesbury 220 pence Thu Oct 29 14:17:34 AST 2020
+##################
+
+ticketMa1.selectAmersham();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+Ticket Amersham 300 pence Thu Oct 29 14:17:34 AST 2020
+##################
+
+ticketMa1.refundBalance()
+    returned int 80
