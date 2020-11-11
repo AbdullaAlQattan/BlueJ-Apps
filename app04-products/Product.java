@@ -85,6 +85,7 @@ public class Product
     {
         if(quantity > 0) 
         {
+            System.out.println("\nSelling " + name);
             quantity--;
         }
         else 
