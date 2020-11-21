@@ -1,8 +1,8 @@
 
 /**
  * Write a description of class Program here.
- *
- * @author (your name)
+ * This program creates an application and runs it.
+ * @author (Abdulla AlQattan)
  * @version (a version number or a date)
  */
 public class Program
