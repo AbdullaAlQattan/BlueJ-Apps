@@ -1,0 +1,113 @@
+StockManager stockMan1 = new StockManager();
+StockDemo stockDem1 = new StockDemo(stockMan1);
+stockDem1.demo();
+
+101: Samsung Galaxy S20 stock level: 0
+
+102: Apple iPhone 12 stock level: 0
+
+103: Google Pixel 4A stock level: 0
+
+104: Samsung Galaxy S20 stock level: 0
+
+105: Apple iPhone 12 stock level: 0
+
+106: Google Pixel 4A stock level: 0
+
+107: Samsung Galaxy S20 stock level: 0
+
+108: Apple iPhone 12 stock level: 0
+
+109: Google Pixel 4A stock level: 0
+
+110: Samsung Galaxy S20 stock level: 0
+
+111: Apple iPhone 12 stock level: 0
+
+112: Google Pixel 4A stock level: 0
+Delivering Products
+
+Product Delivered: 101: Samsung Galaxy S20 stock level: 5
+Product Delivered: 102: Apple iPhone 12 stock level: 5
+Product Delivered: 103: Google Pixel 4A stock level: 3
+Product Delivered: 104: Samsung Galaxy S20 stock level: 5
+Attempt to restock Apple iPhone 12 with a non-positive amount: 0
+Product Delivered: 105: Apple iPhone 12 stock level: 0
+Product Delivered: 106: Google Pixel 4A stock level: 3
+Product Delivered: 107: Samsung Galaxy S20 stock level: 1
+Product Delivered: 108: Apple iPhone 12 stock level: 5
+Product Delivered: 109: Google Pixel 4A stock level: 4
+Product Delivered: 110: Samsung Galaxy S20 stock level: 4
+Product Delivered: 111: Apple iPhone 12 stock level: 1
+Product Delivered: 112: Google Pixel 4A stock level: 3
+
+101: Samsung Galaxy S20 stock level: 5
+
+102: Apple iPhone 12 stock level: 5
+
+103: Google Pixel 4A stock level: 3
+
+104: Samsung Galaxy S20 stock level: 5
+
+105: Apple iPhone 12 stock level: 0
+
+106: Google Pixel 4A stock level: 3
+
+107: Samsung Galaxy S20 stock level: 1
+
+108: Apple iPhone 12 stock level: 5
+
+109: Google Pixel 4A stock level: 4
+
+110: Samsung Galaxy S20 stock level: 4
+
+111: Apple iPhone 12 stock level: 1
+
+112: Google Pixel 4A stock level: 3
+Selling Products
+
+
+Selling Samsung Galaxy S20
+
+Selling Apple iPhone 12
+
+Selling Google Pixel 4A
+
+Selling Samsung Galaxy S20
+Attempt to sell more than in stock item: Apple iPhone 12
+
+Selling Google Pixel 4A
+
+Selling Samsung Galaxy S20
+
+Selling Apple iPhone 12
+Attempt to sell more than in stock item: Google Pixel 4A
+Attempt to sell more than in stock item: Samsung Galaxy S20
+
+Selling Apple iPhone 12
+
+Selling Google Pixel 4A
+
+101: Samsung Galaxy S20 stock level: 2
+
+102: Apple iPhone 12 stock level: 2
+
+103: Google Pixel 4A stock level: 3
+
+104: Samsung Galaxy S20 stock level: 4
+
+105: Apple iPhone 12 stock level: 0
+
+106: Google Pixel 4A stock level: 1
+
+107: Samsung Galaxy S20 stock level: 1
+
+108: Apple iPhone 12 stock level: 4
+
+109: Google Pixel 4A stock level: 0
+
+110: Samsung Galaxy S20 stock level: 0
+
+111: Apple iPhone 12 stock level: 1
+
+112: Google Pixel 4A stock level: 3

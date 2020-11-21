@@ -81,7 +81,7 @@ public class Product
      * Sell one of these products.
      * An error is reported if there appears to be no stock.
      */
-    public void sellOne()
+    public void sell()
     {
         if(quantity > 0) 
         {
@@ -94,4 +94,23 @@ public class Product
                 "Attempt to sell an out of stock item: " + name);
         }
     }
+    
+     /**
+     * Sell one of these products.
+     * An error is reported if there appears to be no stock.
+     */
+    public void sell(int amount)
+    {
+        if(quantity > amount) 
+        {
+            System.out.println("\nSelling " + name);
+            quantity -= amount;
+        }
+        else 
+        {
+            quantity = 0;
+            System.out.println(
+                "Attempt to sell more than in stock item: " + name);
+        }
+    }   
 }

@@ -63,7 +63,21 @@ public class StockManager
         
         if(product != null) 
         {
-            product.sellOne();
+            product.sell();
+        }
+    }
+    
+    public void sellProduct(int id, int amount)
+    {
+        Product product = findProduct(id);
+        
+        if(product != null)
+        {
+            product.sell(amount);
+        }
+        else
+        {
+            System.out.println();
         }
     }
     
@@ -121,7 +135,7 @@ public class StockManager
     {
         for(Product product : stock)
         {
-            System.out.println("\n" + product +"\n");
+            System.out.println("\n" + product);
         }
     }
 }

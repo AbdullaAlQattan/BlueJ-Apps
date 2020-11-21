@@ -27,6 +27,15 @@ public class StockDemo
         manager.addProduct(new Product(101, "Samsung Galaxy S20"));
         manager.addProduct(new Product(102, "Apple iPhone 12"));
         manager.addProduct(new Product(103, "Google Pixel 4A"));
+        manager.addProduct(new Product(104, "Samsung Galaxy S20"));
+        manager.addProduct(new Product(105, "Apple iPhone 12"));
+        manager.addProduct(new Product(106, "Google Pixel 4A"));
+        manager.addProduct(new Product(107, "Samsung Galaxy S20"));
+        manager.addProduct(new Product(108, "Apple iPhone 12"));
+        manager.addProduct(new Product(109, "Google Pixel 4A"));
+        manager.addProduct(new Product(110, "Samsung Galaxy S20"));
+        manager.addProduct(new Product(111, "Apple iPhone 12"));
+        manager.addProduct(new Product(112, "Google Pixel 4A"));
     }
     
     /**
@@ -50,7 +59,8 @@ public class StockDemo
     {
         int amount = 0;
         
-        for(int id = 101; id <= 103; id++)
+        System.out.println("Delivering Products\n");
+        for(int id = 101; id <= 112; id++)
         {
             amount = generator.nextInt(6);
             manager.deliverProduct(id, amount);
@@ -60,6 +70,14 @@ public class StockDemo
      
     private void demoSelling()
     {
+        int amount = 0;
+        System.out.println("Selling Products\n");
+        
+        for(int id = 101; id <= 112; id++)
+        {
+            amount = generator.nextInt(6);
+            manager.sellProduct(id, amount);
+        }        
     }   
 
 }
