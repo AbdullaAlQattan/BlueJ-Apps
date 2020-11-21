@@ -115,6 +115,21 @@ public class StockManager
         return null;
     }
 
+    public void removeProduct(int id)
+    {
+        Product product = findProduct(id);
+        
+        if (product != null)
+        {
+            stock.remove(product); 
+            System.out.println("product removed " + product);
+        }
+        else
+        {
+            System.out.println ("product not found");
+        }
+    }
+    
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
