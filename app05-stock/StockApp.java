@@ -9,8 +9,13 @@
  */
 public class StockApp
 {
+    public final int FRIST_ID = 200;
     // Use to get user input
     private InputReader input;
+    
+    private StockManager manager;
+    
+    private int nextID = FRIST_ID;
     
     /**
      * Constructor for objects of class StockApp
@@ -18,6 +23,7 @@ public class StockApp
     public StockApp()
     {
         input = new InputReader();
+        manager = new StockManager();
     }
 
     /**
@@ -41,21 +47,41 @@ public class StockApp
             printMenuChoices();
            
             String choice = input.getInput();
+            choice = choice.toLowerCase();
+            
             if(choice.equals("quit"))
-            {
-                finished = true;
+                finished =true ;
             }
-            else if (choice.equals ("add")) 
-            {
-                addProduct();
-            }
+        }
+    
+  /**
+   *  
+   */ 
+   public void executeMenuChoice(String choice)
+   {
+       if(choice.equals("add"))
+       {
+           addProduct();
+        }
+        else if(choice.equals("printAll"))
+       {
+           printAllProducts();
         }
     }
     
-    public void addProduct()
+    
+    public void addProduct ()
     {
+        System.out.println("Add a new product");
+        System.out.println();
+        
+        System.out.println("Please enter the name of the product ");
+        String name= input.getInput();
+        
+        Product product = new Product (nextID, name);
+        manager.addProduct(product);
     }
-   
+    
     /**
      * Print out a menu of operation choices
      */
@@ -67,6 +93,11 @@ public class StockApp
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
+    }
+    
+    public void printAllProducts()
+    {
+        manager.printAllProducts(); 
     }
     
     /**
