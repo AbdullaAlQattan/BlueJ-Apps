@@ -1,0 +1,200 @@
+ Stock Management Application 
+    App05: Abdulla AlQattan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+please enter your choiceblank string
+please enter your choiceprintall
+
+Abdulla AlQattan's Stock List
+====================
+
+102: Apple iPhone 12 stock level: 0
+103: Google Pixel 4A stock level: 0
+104: Samsung Galaxy S20 stock level: 0
+105: Apple iPhone 12 stock level: 0
+106: Google Pixel 4A stock level: 0
+107: Samsung Galaxy S20 stock level: 0
+108: Apple iPhone 12 stock level: 0
+109: Google Pixel 4A stock level: 0
+110: Samsung Galaxy S20 stock level: 0
+111: Apple iPhone 12 stock level: 0
+112: Google Pixel 4A stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: Abdulla AlQattan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+please enter your choicequit
+Program.main();
+******************************
+ Stock Management Application 
+    App05: Abdulla AlQattan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Deliver     Deliver a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+please enter your choicesell
+product id
+101
+amount
+4
+101: Samsung Galaxy S20 stock level: 0
+Attempt to sell an out of stock item: Samsung Galaxy S20
+101: Samsung Galaxy S20 stock level: 0
+******************************
+ Stock Management Application 
+    App05: Abdulla AlQattan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Deliver     Deliver a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+please enter your choiceblank string
+please enter your choicedeliver
+product id
+101
+amount
+10
+******************************
+ Stock Management Application 
+    App05: Abdulla AlQattan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Deliver     Deliver a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+please enter your choiceblank string
+please enter your choiceprintall
+
+Abdulla AlQattan's Stock List
+====================
+
+101: Samsung Galaxy S20 stock level: 10
+102: Apple iPhone 12 stock level: 0
+103: Google Pixel 4A stock level: 0
+104: Samsung Galaxy S20 stock level: 0
+105: Apple iPhone 12 stock level: 0
+106: Google Pixel 4A stock level: 0
+107: Samsung Galaxy S20 stock level: 0
+108: Apple iPhone 12 stock level: 0
+109: Google Pixel 4A stock level: 0
+110: Samsung Galaxy S20 stock level: 0
+111: Apple iPhone 12 stock level: 0
+112: Google Pixel 4A stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: Abdulla AlQattan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Deliver     Deliver a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+please enter your choicesell
+product id
+101
+amount
+4
+101: Samsung Galaxy S20 stock level: 10
+
+Selling Samsung Galaxy S20
+
+Selling Samsung Galaxy S20
+
+Selling Samsung Galaxy S20
+
+Selling Samsung Galaxy S20
+
+Selling Samsung Galaxy S20
+101: Samsung Galaxy S20 stock level: 5
+******************************
+ Stock Management Application 
+    App05: Abdulla AlQattan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Deliver     Deliver a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+please enter your choiceblank string
+please enter your choicesell
+product id
+201
+amount
+5
+******************************
+ Stock Management Application 
+    App05: Abdulla AlQattan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Deliver     Deliver a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+please enter your choiceblank string
+please enter your choicesell
+product id
+101
+amount
+20
+101: Samsung Galaxy S20 stock level: 5
+
+Selling Samsung Galaxy S20
+
+Selling Samsung Galaxy S20
+
+Selling Samsung Galaxy S20
+
+Selling Samsung Galaxy S20
+
+Selling Samsung Galaxy S20
+Attempt to sell an out of stock item: Samsung Galaxy S20
+101: Samsung Galaxy S20 stock level: 0
+******************************
+ Stock Management Application 
+    App05: Abdulla AlQattan
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Sell:       Sell a product
+    Deliver     Deliver a product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+please enter your choiceblank string
+please enter your choice

@@ -77,6 +77,14 @@
        {
            removeProduct();
         }
+        else if(choice.equals("sell"))
+        {
+           sellProduct();
+        }
+        else if (choice.equals("deliver"))
+       {
+           deliverProduct();
+        }
    }
     
     
@@ -122,9 +130,12 @@
         System.out.println();
         System.out.println("    Add:        Add a new product");
         System.out.println("    Remove:     Remove an old product");
+        System.out.println("    Sell:       Sell a product");
+        System.out.println("    Deliver     Deliver a product");
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Quit:       Quit the program");
-        System.out.println();        
+        System.out.println();
+        
     }
     
     public void printAllProducts()

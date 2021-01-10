@@ -83,6 +83,7 @@ public class Product
      * An error is reported if there appears to be no stock.
      */
     public void sell()
+    
     {
         if(quantity > 0) 
         {
