@@ -100,6 +100,20 @@
     
     }
     
+    public void sellProduct()
+    {
+        int id = input.getInt("product id");
+        int amount = input.getInt("amount");
+        manager.sellProduct(id, amount);
+    }
+    
+    public void deliverProduct()
+    {
+        int id = input.getInt("product id");
+        int amount = input.getInt("amount");
+        manager.deliverProduct(id, amount);
+    }
+    
     /**
      * Print out a menu of operation choices
      */
