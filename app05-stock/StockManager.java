@@ -29,106 +29,81 @@ public class StockManager
         stock.add(item);
     }
 
-    /**
+     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
      * @param id The ID of the product.
      * @param amount The amount to increase the quantity by.
      */
-    public void deliverProduct(int id, int amount)
+     public void deliverProduct(int id, int amount)
 
     {
         Product product = findProduct(id);
         
         if(product != null)
-        {
-            product.increaseQuantity(amount);
-            System.out.println("Product Delivered: " + product);
-        }
+        
+            product.deliver(amount);
         else
-        {
-            System.out.println("Product ID " + id + "NOT FOUND!!!");
-        }
-
-    }
-
-    /**
-     * Sell one of the given item.
-     * Show the before and after status of the product.
-     * @param id The ID of the product being sold.
-     */
-    public void sellProduct(int id)
-    {
-        Product product = findProduct(id);
         
-        if(product != null) 
-        {
-            product.sell();
-        }
-    }
-    
-    public void sellProduct(int id, int amount)
-    {
-        Product product = findProduct(id);
-        
-        if(product != null)
-        {
-            product.sell(amount);
-        }
-        else
-        {
-            System.out.println();
-        }
-    }
-    
-    /**
-     * Try to find a product in the stock with the given id.
-     * @return The identified product, or null if there is none
-     *         with a matching ID.
-     */
-        
-    /**
-     * Show details of the given product. If found,
-     * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
-     */
-    public void printProduct(int id)
-    {
-        Product product = findProduct(id);
-        
-        if(product != null) 
-        {
-            System.out.println(product.toString());
-        }
-    }
-    
-    public Product findProduct(int id)
-    {
-        for(Product product : stock)
-        {
-            if(product.getID() ==id)
-            {
-                return product;
-            }
-        }
-
-        return null;
+            System.out.println("Invalid Product ID = " + id);
     }
 
     public void removeProduct(int id)
     {
         Product product = findProduct(id);
         
-        if (product != null)
+        if(product != null)
         {
-            stock.remove(product); 
-            System.out.println("product removed " + product);
+            stock.remove(product);
+            System.out.println("Product removed!");
         }
         else
         {
-            System.out.println ("product not found");
+            System.out.println("Product " + id + "does not exist");
         }
     }
+    
+    /**
+     * Sell one of the given item.
+     * Show the before and after status of the product.
+     * @param id The ID of the product being sold.
+     */
+    public void sellProduct(int id, int quantity)
+    {
+        Product product = findProduct(id);
+        
+        if(product != null) 
+        {
+            if(quantity > product.getQuantity())
+               quantity = product.getQuantity();
+               
+            printProduct(id);
+            
+            for(int count = 0; count <= quantity; count++)
+            {
+                product.sell();
+            }
+            
+            printProduct(id);
+        }
+    }
+    /**
+     * Try to find a product in the stock with the given id.
+     * @return The identified product, or null if there is none
+     *         with a matching ID.
+     */
+      public Product findProduct (int id)
+      {
+          for(Product product : stock)
+          {
+              if(product.getID() == id)
+              {
+                return product;
+              }
+          }
+            
+          return null;
+        }
     
     /**
      * Locate a product with the given ID, and return how
@@ -142,15 +117,38 @@ public class StockManager
         return 0;
     }
 
-    
     /**
-     * Print details of all the products.
+     * Print details of the given product. If found,
+     * its name and stock quantity will be shown.
+     * @param id The ID of the product to look for.
+     */
+    public void printProduct(int id)
+    {
+         Product product = findProduct(id);
+         
+         if(product !=null)
+         {
+             System.out.println(product.toString());
+            }
+        }
+        
+    /**
+     * Print out each product in the stock
+     * in the order they are in the stock list
      */
     public void printAllProducts()
     {
+        System.out.println();
+        System.out.println("Abdulla AlQattan's Stock List");
+        System.out.println("====================");
+        System.out.println();
+        
         for(Product product : stock)
         {
-            System.out.println("\n" + product);
+            System.out.println(product);
         }
+        
+        System.out.println();
     }
 }
+    

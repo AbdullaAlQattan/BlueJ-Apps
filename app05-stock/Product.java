@@ -1,7 +1,8 @@
 /**
  * Model some details of a product sold by a company.
  * 
- * @author David J. Barnes and Michael Kölling.
+ * @author David J. Barnes and Michael Kölling 
+ * modified by Abdulla AlQattan.
  * @version 2016.02.29
  */
 public class Product
@@ -64,7 +65,7 @@ public class Product
      * @param amount The number of new items added to the stock.
      *               This must be greater than zero.
      */
-    public void increaseQuantity(int amount)
+    public void deliver(int amount)
     {
         if(amount > 0) 
         {
