@@ -16,22 +16,28 @@ public class Course
     private Module module3;
     private Module module4;
     
+    private int finalMark;
+    private Grades finalGrade;
+        
     /**
      * Constructor for objects of class Course 
      */
     public Course(String codeNo, String title)
     {
         // initialise instance variables
-        this.codeNo = title;
+        this.codeNo = codeNo;
         this.title = title;
         
         module1 = new Module("Programming Concepts", "CO452");
         //todo add others
     }
 
-    public void addModule(Module module, int moduleNo)
+    public void addMark(int mark, int moduleNo)
     {
-        
+        if(moduleNo == 1)
+        {
+            module1.awardMark(mark);
+        }
     }
     
     /**
@@ -41,5 +47,15 @@ public class Course
     {
         // put your code here
         System.out.println("Course " + codeNo + " - " + title);
+    }
+    
+    public Grades convertToGrade(int mark)
+    {
+        if((mark >=0) &&(mark<40))
+        {
+            return Grades.F;
+        }
+        
+        return Grades.X;
     }
 }

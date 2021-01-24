@@ -25,7 +25,14 @@ public class Module
 
     public void awardMark(int mark)
     {
-        this.mark = mark;
+        if((mark >= 0 ) && (mark<=100))
+        {
+          this.mark = mark;
+        }
+        else 
+        {
+            System.out.print("Invalid mark!!!");
+        }
     }
     
     public void print()
