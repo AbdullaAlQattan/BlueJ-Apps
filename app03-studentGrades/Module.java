@@ -7,8 +7,7 @@
  */
 public class Module
 {
-
-    private String title; 
+    private String title;
     
     private String codeNo;
     
@@ -24,9 +23,15 @@ public class Module
      this.codeNo = codeNo;
     }
 
+    public void awardMark(int mark)
+    {
+        this.mark = mark;
+    }
+    
     public void print()
     {
-        System.out.println("Module: " + codeNo = + " " + title + " Mark = " + mark);
+        System.out.println("Module: " + codeNo +
+            " " + title + " Mark = " + mark);
     }
     
    
