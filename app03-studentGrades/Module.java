@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class Module here.
- *
+ * This module contain a single mark, and the title and code. Also, 
+ * marks can be awarded. The module is complete when grades are over 40%
  * @author (Abdulla AlQattan)
- * @version (a version number or a date)
  */
 public class Module
 {
@@ -12,6 +11,10 @@ public class Module
     private String codeNo;
     
     private int mark;
+    
+    private boolean complete;
+    
+    private int credit;
     
     /**
      * Constructor for objects of class Module
@@ -28,6 +31,11 @@ public class Module
         if((mark >= 0 ) && (mark<=100))
         {
           this.mark = mark;
+          if (mark > 40) 
+          { 
+              complete = true;
+              credit = 20;
+          }
         }
         else 
         {
